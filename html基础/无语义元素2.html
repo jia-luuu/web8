@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV+CSS</title>
+    <style>
+        #header{
+            background-color: cornflowerblue;
+            color:crimson;
+            text-align:center;
+            padding: 5px;/*当元素的 Padding（填充）（内边距）被清除时，所"释放"的区域将会受到元素背景颜色的填充*/
+        }
+        #nav{
+            line-height: 30px;/*用于对网页文字及其他元素设置行高*/
+            background-color: darkmagenta;
+            height:300px;
+            width: 100px;
+            float:left;/*元素向左浮动。*/
+            padding: 5px;
+        }
+        #section{
+            width: 500px;
+            height: 100px;
+            float: left;
+            padding:10px;
+        }
+        #footer{
+            background-color: midnightblue;
+            color: oldlace;
+            text-align: center;
+            clear:both;/*在左右两侧均不允许浮动元素。*/
+            padding: 5px;
+        }
+        #jia{
+            background-color: gold;
+            color: indigo;
+            height: 400px;
+            width: 700px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>首页</h1>
+    </div>
+    <div id="nav">HTML<br>css<br>JavaScript<br></div>
+    <div id="section">
+        <h2>HTML</h2>
+        <p>HTML，超文本标签语言</p>
+        <p>人们可以使用html来建立自己的web站点。</p>
+    </div>
+    <div id="jia">我叫刘文佳</div>
+    <div id="footer">Auther:小明E-mail:someone@example.com</div>
+  
+    
+</body>
+</html>
