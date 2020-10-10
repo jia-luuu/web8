@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #box1{
+        #box1 {
             background-color: blue;
             width: 100px;
             height: 100px;
-          
+            position: absolute;
             left: 400px;
-            top:200px;
+            top: 200px;
+            /* padding: 100px; 鸽子模型*/
+            border:solid 10px chartreuse;
+            padding: 20px;
+            margin: 5px,10px,15px,20px;
+
         }
-        #box2{
-            background-color:red;
+
+        #box2 {
+            background-color: red;
             width: 100px;
             height: 100px;
-           
-            left: 200px;
-            top:200px;
+            position: absolute;
+            left: 100px;
+            top: 400px;
         }
     </style>
 </head>
+
 <body>
-    <div id="box1" class="box"></div>
-    <div id="box2" class="box"></div>
+    <div id="box1" class="box">
+    </div>
+    <div id="box2" class="box">
+    </div>
+
     <br>
     <br>
     <br>
     <input type="button" id="btn1" value="请点击我">
     <script>
-        var target=document.getElementById("btn1");
-        target.onclick=function(){
-            var leftValue=document.getElementsByClassName("box1").style.left;
-            leftValue=leftValue.replace("px","");
-            leftValue=Number(leftValue)+5;
-            document.getElementById("box1").style.left=leftValue+"px";
-           
+        var target = document.getElementById("btn1");
+        target.onclick = function () {
+            var leftValue = document.getElementById("box1").style.left;
+            leftValue = leftValue.replace("px", "");
+            leftValue = Number(leftValue) + 5;
+            document.getElementById("box1").style.left = leftValue + "px";
         }
     </script>
 </body>
+
 </html>
